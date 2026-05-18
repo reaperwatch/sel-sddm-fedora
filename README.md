@@ -1,5 +1,5 @@
 <h2 align="center"> SDDM SEL</h2>
-
+(forked from https://github.com/leonardochappuis/sddmsel)
 <p align=center>
 A SEL inspired theme for the <a href="https://github.com/sddm/sddm">SDDM Login Manager</a>
 </p>
@@ -24,7 +24,7 @@ https://github.com/leonardochappuis/sddmsel/assets/40621126/6ec86e78-692d-4a24-b
 1. Open terminal, and clone the repository with:
 
    ```sh
-   git clone https://github.com/leonardochappuis/sddmsel.git ~/sddm-sel
+   git clone https://github.com/reaperwatch/sel-sddm-fedora.git ~/sddm-sel
    ```
 
 2. Test versions:
