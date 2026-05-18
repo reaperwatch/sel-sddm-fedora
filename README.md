@@ -13,6 +13,7 @@ https://github.com/leonardochappuis/sddmsel/assets/40621126/6ec86e78-692d-4a24-b
 ### From sources
 
 > _Assumes that you've installed and configured SDDM correctly_ (if not [read more](https://wiki.archlinux.org/title/SDDM))
+
 > \_For Kde plasma please use [sddm-kcm](https://github.com/KDE/sddm-kcm)
 
 > Please make sure you have the following dependencies installed:
