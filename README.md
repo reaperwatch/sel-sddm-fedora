@@ -6,7 +6,7 @@ A SEL inspired theme for the <a href="https://github.com/sddm/sddm">SDDM Login M
 
 <h2 align=center>Preview</h2>
 
-https://github.com/reaperwatch/sel-sddm-fedora/blob/main/sel-shaders-fixed/preview.png
+https://raw.githubusercontent.com/reaperwatch/sel-sddm-fedora/refs/heads/main/sel-shaders-fixed/preview.png
 
 ## Install
 
