@@ -23,7 +23,7 @@ https://github.com/leonardochappuis/sddmsel/assets/40621126/6ec86e78-692d-4a24-b
 > - **`qt6-qtsvg`**: Allows SDDM to properly render vector icons and custom interface shapes.
 > - **`gstreamer1-plugins-good` & `gstreamer1-libav`**: Essential system-level multimedia codecs required to decode and play back the live background video container.
 
-- Fedora install command
+- Fedora install command:
 
 ```bash
 sudo dnf install qt6-qtmultimedia qt6-qtsvg qt6-qt5compat gstreamer1-plugins-good gstreamer1-libav
@@ -34,8 +34,6 @@ sudo dnf install qt6-qtmultimedia qt6-qtsvg qt6-qt5compat gstreamer1-plugins-goo
    ```sh
    git clone https://github.com/reaperwatch/sel-sddm-fedora.git ~/sddm-sel
    ```
-
-````
 
 2. Test versions:
 
@@ -117,4 +115,7 @@ sudo systemctl daemon-reexec
 ## License
 
 [GNU Lesser General Public License v3.0](LICENSE)
-````
+
+```
+
+```
