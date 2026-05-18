@@ -4,6 +4,10 @@
 A SEL inspired theme for the <a href="https://github.com/sddm/sddm">SDDM Login Manager</a>
 </p>
 
+<h2 align=center>Preview</h2>
+
+https://github.com/reaperwatch/sel-sddm-fedora/blob/main/sel-shaders-fixed/preview.png
+
 ## Install
 
 ### From sources
