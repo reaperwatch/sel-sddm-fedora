@@ -4,10 +4,6 @@
 A SEL inspired theme for the <a href="https://github.com/sddm/sddm">SDDM Login Manager</a>
 </p>
 
-<h2 align=center>Preview</h2>
-
-https://github.com/leonardochappuis/sddmsel/assets/40621126/6ec86e78-692d-4a24-b456-1f052c97dd99
-
 ## Install
 
 ### From sources
