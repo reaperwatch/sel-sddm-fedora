@@ -38,11 +38,11 @@ sudo dnf install qt6-qtmultimedia qt6-qtsvg qt6-qt5compat gstreamer1-plugins-goo
 2. Test versions:
 
    ```sh
-   sddm-greeter-qt6 --test-mode --theme ~/sddm-sel/sel-shaders
+   sddm-greeter-qt6 --test-mode --theme ~/sddm-sel/sel-shaders-fixed
    ```
 
    ```sh
-   sddm-greeter-qt6 --test-mode --theme ~/sddm-sel/sel-basic
+   sddm-greeter-qt6 --test-mode --theme ~/sddm-sel/sel-basic-fixed
    ```
 
 3. Them move the wanted version as follows:
@@ -50,13 +50,13 @@ sudo dnf install qt6-qtmultimedia qt6-qtsvg qt6-qt5compat gstreamer1-plugins-goo
 With Shaders
 
 ```sh
-sudo mv ~/sddm-sel/sel-shaders /usr/share/sddm/themes/
+sudo mv ~/sddm-sel/sel-shaders-fixed /usr/share/sddm/themes/
 ```
 
 Without Shaders
 
 ```sh
-sudo mv ~/sddm-sel/sel-basic /usr/share/sddm/themes/
+sudo mv ~/sddm-sel/sel-basic-fixed /usr/share/sddm/themes/
 ```
 
 4. Remove the folder if you'd like
@@ -64,6 +64,49 @@ sudo mv ~/sddm-sel/sel-basic /usr/share/sddm/themes/
 ```sh
 rm -rf ~/sddm-sel
 ```
+
+## 🔊 Audio Troubleshooting
+
+If the background audio does not play on the login screen, SDDM's user session is likely failing to connect to PipeWire, or it is routing audio to the wrong output hardware. Follow these steps to fix it:
+
+### 1. Enable SDDM Session Lingering
+
+SDDM needs a persistent user session to keep its audio server connection alive during the boot sequence.
+
+First, check if SDDM can communicate with PipeWire:
+
+```bash
+sudo -u sddm pw-cli info 0
+```
+
+If that command returns an error or shows nothing, force the system to keep the SDDM user session alive by running:
+
+```bash
+sudo loginctl enable-linger sddm
+```
+
+### 2. Verify and Set the Default Audio Sink
+
+​If the session is alive but you still hear nothing, SDDM might be trying to play audio through a disconnected channel (like an unused HDMI port instead of your speakers).
+​Check SDDM's current default audio output target:
+
+```bash
+sudo -u sddm pactl info
+```
+
+If the default sink listed isn't your primary audio device, list all available audio hardware names on your system:
+
+```bash
+sudo -u sddm pactl list short sinks
+```
+
+Find your active device name in that list (e.g., alsa_output.pci-0000_00_1f.3.analog-stereo), and set it manually as SDDM's default target:
+
+```bash
+sudo -u sddm pactl set-default-sink YOUR_SPEAKER_SINK_NAME_HERE
+```
+
+(Replace YOUR_SPEAKER_SINK_NAME_HERE with the exact device name found in the previous step).
 
 ## Configure
 
