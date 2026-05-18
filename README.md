@@ -1,6 +1,6 @@
 <h2 align="center"> SDDM SEL</h2>
 <p align=center>
-(forked from <a href="https://github.com/leonardochappuis/sddmsel">leonardochappuis</a>)<br>
+(forked from <a href="https://github.com/leonardochappuis/sddmsel">leonardochappuis</a> and updated to qt6)<br>
 A SEL inspired theme for the <a href="https://github.com/sddm/sddm">SDDM Login Manager</a>
 </p>
 <div align="center">
