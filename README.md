@@ -17,6 +17,27 @@ A SEL inspired theme for the <a href="https://github.com/sddm/sddm">SDDM Login M
 
 > _For Kde plasma please use_ [sddm-kcm](https://github.com/KDE/sddm-kcm)
 
+> _if your kde system (fedora install) overwrites sddm on update run:_
+
+1. install dnf locker
+
+````bash
+sudo dnf install 'dnf-command(versionlock)'
+```
+
+2. lock sddm
+
+```bash
+sudo dnf versionlock add sddm sddm-kcm sddm-wayland-plasma
+```
+
+3. enable sddm and disable plasma login (system may still overrite this on update)
+
+```bash
+sudo systemctl disable plasmalogin
+sudo systemctl enable --force sddm
+```
+
 > Please make sure you have the following dependencies installed:
 
 > - **`qt6-qtmultimedia`**: Powers the background video playback and theme boot audio.
@@ -28,7 +49,7 @@ A SEL inspired theme for the <a href="https://github.com/sddm/sddm">SDDM Login M
 
 ```bash
 sudo dnf install qt6-qtmultimedia qt6-qtsvg qt6-qt5compat gstreamer1-plugins-good gstreamer1-libav
-```
+````
 
 1. Open terminal, and clone the repository with:
 
