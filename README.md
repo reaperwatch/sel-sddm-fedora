@@ -21,7 +21,7 @@ A SEL inspired theme for the <a href="https://github.com/sddm/sddm">SDDM Login M
 
 1. install dnf locker
 
-````bash
+```bash
 sudo dnf install 'dnf-command(versionlock)'
 ```
 
