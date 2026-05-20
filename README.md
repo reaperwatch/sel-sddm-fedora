@@ -19,19 +19,9 @@ A SEL inspired theme for the <a href="https://github.com/sddm/sddm">SDDM Login M
 
 > _if your kde system (fedora install) overwrites sddm on update run:_
 
-1. install dnf locker
+1. you may need to reinstall sddm
 
-```bash
-sudo dnf install 'dnf-command(versionlock)'
-```
-
-2. lock sddm
-
-```bash
-sudo dnf versionlock add sddm sddm-kcm sddm-wayland-plasma
-```
-
-3. enable sddm and disable plasma login (system may still overrite this on update)
+2. enable sddm and disable plasma login (system may still overrite this on update)
 
 ```bash
 sudo systemctl disable plasmalogin
@@ -49,7 +39,7 @@ sudo systemctl enable --force sddm
 
 ```bash
 sudo dnf install qt6-qtmultimedia qt6-qtsvg qt6-qt5compat gstreamer1-plugins-good gstreamer1-libav
-````
+```
 
 1. Open terminal, and clone the repository with:
 
