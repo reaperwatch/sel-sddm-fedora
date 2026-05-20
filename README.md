@@ -21,7 +21,7 @@ A SEL inspired theme for the <a href="https://github.com/sddm/sddm">SDDM Login M
 
 1. you may need to reinstall sddm
 
-2. enable sddm and disable plasma login (system may still overrite this on update)
+2. enable sddm and disable plasma login
 
 ```bash
 sudo systemctl disable plasmalogin
