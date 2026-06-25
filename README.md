@@ -21,6 +21,12 @@ A SEL inspired theme for the <a href="https://github.com/sddm/sddm">SDDM Login M
 
 1. you may need to reinstall sddm
 
+1.5. easy fedora kde set-up
+
+```bash
+alias fix-sddm='sudo dnf install -y sddm-kcm && sudo systemctl disable plasmalogin && sudo systemctl enable --force sddm'
+```
+
 2. enable sddm and disable plasma login
 
 ```bash
