@@ -34,6 +34,20 @@ and paste:
 alias fix-sddm='sudo dnf install -y sddm-kcm && sudo systemctl disable plasmalogin && sudo systemctl enable --force sddm'
 ```
 
+now make bashrc check aliases
+
+```bash
+nano ~/.bash_aliases
+```
+
+and put in the file
+
+```bash
+if [ -f ~/.bash_aliases ]; then
+    . ~/.bash_aliases
+fi
+```
+
 then simply run
 
 ```bash
