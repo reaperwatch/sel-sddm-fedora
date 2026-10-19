@@ -17,7 +17,7 @@ A SEL inspired theme for the <a href="https://github.com/sddm/sddm">SDDM Login M
 
 > _For Kde plasma please use_ [sddm-kcm](https://github.com/KDE/sddm-kcm)
 
-> _if your kde system (fedora install) overwrites sddm on update run:_
+> _if your kde system (fedora plasma install) overwrites sddm on update run:_
 
 1. you may need to reinstall sddm
 
